@@ -17,20 +17,20 @@ const sumProduct = (array) => {
         sum = sum + array[i];
         product = product * array[i];
     }
-    return {sum, product}
+    return [sum, product]
 }
-const result = sumProduct( arr3 )
+const result = sumProduct( arr3 );
 console.log( result );
 
 /* Opción reduce */
 console.log("Opción 2: Con reduce");
 const sumReduce = (array) => 
     array.reduce ( (sumatoria, currentValue) => sumatoria + currentValue, 0);
-console.log( `La suma de los números del arreglo es: ${sumReduce(arr3)}`)
+console.log( `La suma es: ${sumReduce(arr3)}`)
 
 const productReduce = (array) => 
     array.reduce ( (producto, currentValue) => producto * currentValue, 1);
-console.log( `El producto de los números del arreglo es: ${productReduce(arr3)}`)
+console.log( `El producto es: ${productReduce(arr3)}`)
 
 // Exportar las funciones para que estén disponibles globalmente
 // Exportar las funciones para que estén disponibles globalmente
