@@ -17,7 +17,7 @@ const sumProduct = (array) => {
         sum = sum + array[i];
         product = product * array[i];
     }
-    return [sum, product]
+    return {sum, product}
 }
 const result = sumProduct( arr3 );
 console.log( result );
