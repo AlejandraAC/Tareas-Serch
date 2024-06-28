@@ -12,7 +12,7 @@ Complete the function to print out the string: This is a sentence.
 
 console.log("Ejercicio 1: Completar la función para imprimir: This is a sentence");
 
-
+console.log("Opción 1: Ciclo for");
 const arr = ["This", "is", "a", "sentence."];
 /* Opción 1 */
 function printOutString() {
@@ -24,11 +24,13 @@ function printOutString() {
 }
 console.log(printOutString());
 
+
+console.log("Opción 2: Join");
 /* Opcion con join */
 function printOutString2() {
     return arr.join(" ");
   }
-console.log(printOutString2());
+console.log(printOutString2()); 
 
 // Añade la función al objeto window para hacerla accesible globalmente
 window.printOutString2 = printOutString2;
